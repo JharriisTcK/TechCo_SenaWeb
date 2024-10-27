@@ -1,0 +1,42 @@
+.neoKiri_Recover {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1em;
+}
+.neoKiri_Recover img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.neoKiri_Recover h1,
+.neoKiri_Recover h2 {
+    text-align: center;
+}
+
+.neoKiri_Recover form {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: var(--blanco-hover);
+    border-radius: 0.5em;
+}
+
+.neoKiri_Recover form label {
+    display: block;
+}
+.neoKiri_Recover form label b {
+    display: block;
+    padding: 0.5em;
+    text-align: center;
+}
+.neoKiri_Recover form label input[type=password] {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.neoKiri_Recover form input[type=submit] {
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    margin: 1em 0;
+}

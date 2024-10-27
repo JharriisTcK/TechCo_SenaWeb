@@ -1,0 +1,39 @@
+.LoginBoxNK {
+    background: #f8f8f8;
+    padding: 1em;
+    width: 80%;
+    max-width: 30em;
+    border-radius: 1em;
+    line-height: 2em;
+    text-align: center;
+    position: absolute;
+    box-shadow: 0 0 1em #aaa;
+}
+.LoginBoxNK .Logo {
+    height: 9em;
+}
+.LoginBoxNK b
+{
+    display: block;
+    
+}
+.LoginBoxNK input[type=text],
+.LoginBoxNK input[type=password] {
+    width: 80%;
+    padding: 0.5em;
+}
+.LoginBoxNK input[type=button],
+.LoginBoxNK input[type=submit] {
+    background: #00a339;
+    width: 80%;
+    border: 0px;
+    color: #fff;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+.LoginBoxNK input[type=submit]:hover {
+    background: #007F2D;
+}
+.LoginBoxNK input[type=submit]:active {
+    background: #00FF59;
+}

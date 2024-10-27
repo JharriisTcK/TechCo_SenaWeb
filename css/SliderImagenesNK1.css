@@ -1,0 +1,102 @@
+.SliderImagenesNK1 {
+    background-color: var(--gris-bg);
+    margin: 1em 0;
+}
+
+.SliderImagenesNK1:empty {
+    display: none;
+}
+
+.SliderImagenesNK1 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.SliderImagenesNK1 .PreviewBox {
+    position: relative;
+    text-align: center;
+    height: 85vh;
+    max-height: 85vh;
+}
+.SliderImagenesNK1 .PreviewBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.SliderImagenesNK1 .PreviewBox .ButtonNext,
+.SliderImagenesNK1 .PreviewBox .ButtonPrev {
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0.5;
+}
+.SliderImagenesNK1 .PreviewBox .ButtonNext:hover,
+.SliderImagenesNK1 .PreviewBox .ButtonPrev:hover {
+    opacity: 1;
+    background-color: var(--color-principal-white);
+
+}
+.SliderImagenesNK1 .PreviewBox .ButtonPrev {
+    left: 0;
+    width: 2em;
+
+}
+.SliderImagenesNK1 .PreviewBox .ButtonNext {
+    right: 0;
+    width: 3em;
+}
+.SliderImagenesNK1 .Lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.SliderImagenesNK1 .Lista li:hover {
+    background-color: var(--blanco-hover);
+    cursor: pointer;
+
+}
+.SliderImagenesNK1 .Lista img {
+    height: 5em;
+    width: 100%;
+    object-fit: contain;
+}
+
+.SliderImagenesNK1_Max {
+    background-color: #ffffff54;
+    backdrop-filter: blur(40px);
+}
+.SliderImagenesNK1_Max .HeaderMax {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3em;
+}
+.SliderImagenesNK1_Max .HeaderMax .Close {
+    background-color: var(--rojo);
+    padding: 0.5em;
+    text-align: center;
+}
+.SliderImagenesNK1_Max .HeaderMax .Close:hover {
+    cursor: pointer;
+    background-color: var(--rojo-hover);
+}
+
+.SliderImagenesNK1_Max .ButtonPrev,
+.SliderImagenesNK1_Max .ButtonNext {
+    position: absolute;
+    height: 50vh;
+    top: 25vh;
+    z-index: 1;
+}
+.SliderImagenesNK1_Max .ButtonPrev {
+    left: 0px;
+    
+}
+.SliderImagenesNK1_Max .ButtonNext {
+    right: 0px;
+    
+}

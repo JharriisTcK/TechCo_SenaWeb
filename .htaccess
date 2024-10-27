@@ -1,0 +1,30 @@
+# Activar RewriteEngine
+RewriteEngine on
+
+# Reescribir la URL solicitada por el usuario
+
+RewriteRule Publicaciones/(\d\d\d\d)/(\d\d)/([\w\-]+)_([\w]+) Publicaciones/Anio/Mes/Publicacion.php?t=$3&id=$4
+RewriteRule Publicaciones/(\d\d\d\d)/(\d\d)/$ Publicaciones/Anio/Mes/PublicacionesMes.php?Anio=$1&Mes=$2
+RewriteRule Publicaciones/(\d\d\d\d)/$ Publicaciones/Anio/PublicacionesAnio.php?Anio=$1
+
+ReWriteRule Servicios/([\w\-]+)$ Servicios/servicio.php?nickdir=$1
+
+ReWriteRule Productos/([\w\-]+)$ Productos/producto.php?nickdir=$1
+# ReWriteRule Productos?/$ Productos/index.php
+ReWriteRule Categorias/$ Productos/indexCategorias.php
+ReWriteRule Categorias/([\w\-]+)/$ Productos/categoria.php?nickdir=$1
+ReWriteRule Marcas/$ Productos/indexMarcas.php
+ReWriteRule Marcas/([\w\-]+)/$ Productos/marca.php?nickdir=$1
+
+ReWriteRule Colaboradores/([\w\-]+)$ Colaboradores/colaborador.php?usuarionick=$1
+ReWriteRule UsuarioLogin/$ Usuario/usuariologin.php
+ReWriteRule Usuario/Compra=(ccv[\w]+)$ Usuario/compraInfo.php?CompraID=$1
+
+ReWriteRule UsuarioNuevo/([\w\-]+)/$ Recuperacion/id/usuario_nuevo_pass.php?Token=$1
+ReWriteRule RecuperacionUsuario/([\w\-]+)/$ Recuperacion/id/usuario_pass_recover.php?Token=$1
+ReWriteRule RecuperacionColaborador/([\w\-]+)/$ Recuperacion/id/colaborador_pass_recover.php?Token=$1
+
+ReWriteRule Nuestra-Empresa$ NuestraEmpresa.php
+ReWriteRule Politica-de-Devolucion$ PoliticaDevolucion.php
+ReWriteRule Politica-de-Privacidad$ PoliticaPrivacidad.php
+ReWriteRule Politica-de-Cookies$ PoliticaCookies.php

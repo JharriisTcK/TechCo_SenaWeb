@@ -1,0 +1,423 @@
+.ProductosNK_Admin,
+.ProductosCategoriasNK_Admin,
+.ProductosMarcasNK_Admin {
+    background-color: var(--gris-bg);
+    margin: 0;
+}
+
+.ProductosNK_Admin h2,
+.ProductosCategoriasNK_Admin h2,
+.ProductosMarcasNK_Admin h2 {
+    padding: 0.5em;
+    margin: 0;
+    color: var(--blanco);
+    background-color: var(--negro);
+    text-align: center;
+}
+.ProductosNK_Admin ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+.ProductosNK_Admin .ProductoItem {
+    padding: 0.5em;
+    outline: 1px dashed var(--gris-outline);
+    text-align: center;
+}
+.ProductosNK_Admin .ProductoItem:hover {
+    background-color: var(--blanco-hover);
+}
+.ProductosNK_Admin .ProductoItem a {
+    display: block;
+
+}
+.ProductosNK_Admin .ProductoItem img,
+.ProductosCategoriasNK_Admin ul li img {
+    display: block;
+    width: 100%;
+    height: 10em;
+    object-fit: contain;
+}
+
+/* -------------------------------------------------- */
+.ProductosNK_AdminForm > div {
+    background-color: var(--gris-bg);
+}
+
+.ProductosNK_AdminForm img {
+    max-width: 100%;
+}
+/* -------------------------------------------------- */
+
+.ProductosCategoriasNK_Admin img,
+.ProductosMarcasNK_Admin img {
+    max-width: 100%;
+}
+.ProductosCategoriasNK_Admin button,
+.ProductosMarcasNK_Admin button {
+    display: block;
+    margin: 0 auto;
+}
+.ProductosCategoriasNK_Admin .PublicosBox ul,
+.ProductosMarcasNK_Admin .PublicosBox ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    
+.ProductosCategoriasNK_Admin .PublicosBox ul li,
+.ProductosMarcasNK_Admin .PublicosBox ul li {
+    text-align: center;
+    padding: 0.5em;
+    outline: 1px dashed var(--gris-outline);
+}
+.ProductosCategoriasNK_Admin .PublicosBox ul li:hover,
+.ProductosMarcasNK_Admin .PublicosBox ul li:hover {
+    background-color: var(--blanco-hover);
+}
+/* -------------------------------------------------- */
+
+.ProductosNK_Board {
+    margin: 0;
+}
+.ProductosNK_Board img {
+    max-width: 100%;
+}
+.ProductosNK_Board .imgzero {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.ProductosNK_Board .imgzero img {
+    display: block;
+    margin: 0 auto;
+    max-height: 70vh;
+}
+
+.ProductosNK_Board .ContainerBox {
+    display: grid;
+    gap: 1em;
+}
+
+.ProductosNK_Board .SideControlesBox h2 {
+    margin: 0;
+    padding: 0.25em;
+    text-align: center;
+    position: sticky;
+    color: var(--blanco);
+    background-color: var(--negro);
+    top: 2.3em;
+}
+
+.ProductosNK_Board .SideControlesBox > div {
+    margin-bottom: 1em;
+    background-color: var(--gris-bg);
+}
+
+.ProductosNK_Board .SideControlesBox h2 a,
+.ProductosNK_Board .SideControlesBox h2 a {
+    color: var(--blanco);
+    padding: 0;
+    margin: 0;
+}
+
+.ProductosNK_Board .SideControlesBox h2 a:hover,
+.ProductosNK_Board .SideControlesBox h2 a:hover {
+    background-color: transparent;
+    color: var(--blanco);
+    padding: 0;
+    margin: 0;
+}
+
+
+.ProductosNK_Board .SideControlesBox ul,
+.ProductosNK_Board .SideControlesBox ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+.ProductosNK_Board .SideControlesBox ul li,
+.ProductosNK_Board .SideControlesBox ul li {
+    text-align: left;
+}
+
+.ProductosNK_Board .SideControlesBox a,
+.ProductosNK_Board .SideControlesBox a {
+    display: block;
+    padding: 0.5em;
+}
+.ProductosNK_Board .SideControlesBox a:hover,
+.ProductosNK_Board .SideControlesBox a:hover {
+    background-color: var(--blanco-hover);
+}
+
+
+.ProductosNK_Board .ListaHeader {
+    background-color: var(--gris-bg);
+    margin-bottom: 1em;
+}
+.ProductosNK_Board .ListaHeader:empty {
+    display: none;
+}
+
+.ProductosNK_Board .ListaHeader h3 {
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;
+    color: var(--blanco);
+    background-color: var(--negro);
+}
+
+.ProductosNK_Board .ListaHeader p {
+    margin: 0;
+    padding: 0.5em;
+}
+
+.ProductosNK_Board .ListaBox ul {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 1em;
+}
+
+.ProductosNK_Board .imgzero {
+    background-color: var(--gris-bg);
+    padding: 0.5em;
+}
+
+.ProductosNK_Board .CategoriaItem,
+.ProductosNK_Board .MarcaItem,
+.ProductosNK_Board .ProductoItem  {
+    /* padding: 0.5em; */
+    text-align: center;
+    background-color: var(--gris-bg);
+}
+.ProductosNK_Board .CategoriaItem img,
+.ProductosNK_Board .MarcaItem img,
+.ProductosNK_Board .ProductoItem img {
+    display: block;
+    width: 100%;
+}
+
+.ProductosNK_Board .ProductoItem:hover  {
+    background-color: var(--blanco);
+}
+/* .ProductosNK_Board .ProductoItem:active,
+.ProductosNK_Board .ProductoItem:hover  {
+    background-color: var(--blanco);
+} */
+.ProductosNK_Board .ProductoItem a {
+    display: block;
+    color: var(--color-principal);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.ProductosNK_Board .ProductoItem a:hover {
+    color: var(--color-principal-white);
+}
+
+.ProductosNK_Board .ProductoItem b {
+    display: block;
+    padding: 0.1em;
+}
+.ProductosNK_Board .ProductoItem > div {
+    padding: 0.5em;
+}
+.ProductosNK_Board .ProductoItem img {
+    width: 100%;
+    height: 10em;
+    object-fit: contain;
+}
+.ProductosNK_Board .ProductoPrecio {
+    font-weight: bold;
+}
+
+/* -------------------------------------------------- */
+
+.ProductoNK img {
+    max-width: 100%;
+}
+.ProductoNK_HeaderBox {
+    position: relative;
+    height: 55vh;
+    margin-top: 3.4em;
+    margin-bottom: 1em;
+}
+.ProductoNK_HeaderBox .SliderContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.ProductoNK_HeaderBox h1,
+.ProductoNK_HeaderBox p {
+    margin: 0;
+}
+
+.ProductoNK_HeaderBox .HeaderPortada {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.ProductoNK_HeaderBox .HeaderInfo {
+    color: #fff;
+    text-shadow: 1px 1px 2px var(--negro);
+    background-color: #0007;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
+
+.ProductoNK_HeaderBox .HeaderInfo > * {
+    padding: 0.25em;
+}
+.ProductoNK_HeaderBox .HeaderSeccion {
+    position: absolute;
+    top: -1em;
+    left: 0;
+}
+
+.ProductoNK .PrecioBox {
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-align: center;
+}
+.ProductoNK .PrecioBox input[type=number] {
+    text-align: center;
+}
+
+.ProductoNK .PrecioBox .PrecioDisponibles {
+    font-size: 1.2em;
+    padding: 0.25em;
+}
+.ProductoNK .PrecioBox .PrecioTotal {
+    font-size: 1.8em;
+}
+.ProductoNK .PrecioBox .InCarrito {
+    color: #7fff00;
+    border-right: 4px solid chartreuse;
+    padding-right: 0.5em;
+    text-align: right;
+
+}
+
+.ProductoNK .PrecioBox .ButtonCarrito {
+    display: inline-block;
+    margin: 1em;
+    background: var(--color-principal) url("../img/carrito_compras.svg") no-repeat;
+    padding: 5px;
+    padding-left: 1em;
+}
+.ProductoNK .PrecioBox .PrecioControles {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+
+}
+
+.ProductoNK .PrecioBox object {
+    width: 1em;
+    filter: invert(1);
+    padding: 0.25em;
+    margin-bottom: -0.25em;
+}
+.ProductoNK .PrecioBox object:hover {
+    background-color: var(--blanco);
+    filter: invert(0);
+    cursor: pointer;
+}
+.ProductoNK .PrecioBox object svg {
+    fill: #fff;
+}
+
+.ProductoNK .ContenidoBox {
+    background-color: var(--gris-bg);
+    
+}
+.ProductoNK .ContenidoBox img {
+    max-height: 65vh;
+    display: block;
+    margin: 0 auto;
+}
+.ProductoNK .ContenidoBox .ProductoNombre {
+    margin: 0;
+    padding: 0.25em;
+    text-align: center;
+    position: sticky;
+    color: var(--blanco);
+    background-color: var(--color-principal);
+    top: 3.3em;
+}
+.ProductoNK .ContenidoBox .ProductoCategorias {
+    text-align: right;
+}
+.ProductoNK .ContenidoBox .ProductoCategorias a {
+    display: inline-block;
+    padding: 0.5em;
+    border-bottom: 1px solid #000;
+}
+.ProductoNK .ContenidoBox .ProductoCategorias a:hover {
+    background-color: var(--blanco-hover);
+}
+.ProductoNK .ContenidoBox .ProductoParrafos {
+    padding: 0.5em;
+    
+}
+.ProductoNK .ContenidoBox iframe {
+    width: 100%;
+    border: 0;
+}
+.ProductoNK .ContenidoBox .PublicacionFooter {
+    background-color: var(--color-principal-white);
+    color: var(--blanco);
+    padding: 0.5em;
+    text-align: center;
+}
+
+/* Estilo Tablet */
+@media screen and (min-width: 400px) {
+    .ProductosNK_Admin ul {
+        grid-template-columns: 1fr 1fr;
+    }
+    .ProductosNK_Board .ContainerBox {
+        grid-template-columns: 1fr 2fr;
+    }
+    .ProductosNK_Board .ListaBox ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .ProductoNK_HeaderBox { 
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1em;
+    }
+
+    .ProductoNK_HeaderBox .HeaderPortada {
+        position: absolute;
+    }
+
+    .ProductoNK .PrecioBox {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .ProductosNK_Admin ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .ProductosNK_Board .ContainerBox {
+        grid-template-columns: 9em 1fr;
+    }
+    .ProductosNK_Board .ListaBox ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}

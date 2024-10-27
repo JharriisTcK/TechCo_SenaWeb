@@ -1,0 +1,48 @@
+
+.Caja_AdminNK .ListaBox ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+.Caja_AdminNK .ListaBox ul li {
+    padding: 0.5em;
+    background-color: var(--gris-bg);
+}
+
+.Caja_AdminNK h1,
+.CajaRevision_AdminNK h1 {
+    text-align: center;
+    color: var(--blanco);
+}
+
+.CajaRevision_AdminNK > div {
+    background-color: var(--gris-bg);
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 0.5em;
+}
+
+.CajaRevision_AdminNK > div:empty {
+    display: none;
+}
+
+.CajaRevision_AdminNK .ItemsLista {
+    padding: 0;
+    background-color: transparent;
+}
+.CajaRevision_AdminNK .ItemsLista ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.CajaRevision_AdminNK .ItemsLista ul li {
+    padding: 0.5em;
+    background-color: var(--gris-bg);
+    border-radius: 0.5em;
+}

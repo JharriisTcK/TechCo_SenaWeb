@@ -1,0 +1,163 @@
+-----------------------------------------
+---------------PENDIENTES----------------
+-----------------------------------------
+
+-Registar usuario no carga
+-Productos Nuevo Slider Header Solo Producto (Vitrina), no album
+-Inicio de sesion PanelNK Administrativo (Mejor crear usuarios administrador, para guardar registro uso y quienes lo usan con todos los derechos)
+-PanelNK Tokens: Enviar Correo
+
+-Publicaciones Colaboradores/Usuarios, Mostrar si el usuario esta deshabilitado
+-ProductoNK: GlobalFuncion Actualizar producto con CarritoNK
+
+-Aside: Crear una funcion jx Aside que se encargue de obtener productos, articulos,, ofertas, de modo aleatorio en el aside de las paginas, en primer pensado leer los tipos de nodo con su ID que quiero y solicitarlos mediante Ajax
+-----------------------------------------
+V0.1
+2024-03-03
+-PanelNK Usuarios: Habilitar Modo Administrador
+-top bar en editar publicacion
+-foto de perfil usuario en topbar
+2024-03-02
+-Publicaciones, Pagina año, pagina mes
+2024-02-20
+-CSS: Carrito de Compras
+2024-02-26
+-CSS: Organizado apariencia de LOGIN, Colaborador, Publicacion Editor, Editor, Encabezados, etc etc etc...
+-Usuario Colaborador: Mostrar el mapa de leaftleft en la pagina de colaboradores
+2024-02-24
+-UsuarioNK: Sede Fotos Album y Sede Foto Portada tanto subir como eliminar, falta mostrar en publico colaborador
+2024-02-22
+-CarritoNK: GlobalFuncion Actualizar Carrito con ProductoNK
+-UsuarioNK: Mostrando foto de perfil en el TOPBar de Usuario y añadiendo la foto a las variables de session
+-PanelNK Publicaciones: Editar Articulo, accediendo como usuario y redirigir a la pagina de edicion
+-Publicaciones: Link del Editor
+2024-02-17
+-UsuarioNK: Sede SetInfo
+2024-02-16
+-PanelNK Usuarios: Solicitar Token Reestablecer Contraseña
+-UsuariosNK: Solicitar Token Reestablecer Contraseña
+2024-02-15
+-UsuarioNK: Configurado la opcion de habilitar colaborador
+-UsuarioNK: Acceder como usuario desde el administrador completo
+2024-02-14
+-UsuarioNK:Configurado la opcion de foto de perfil y mostrado en usuarios admin y colaboradores
+2024-02-09
+-UsuariosNK: Eliminando colaboradoresNK y usar solo acceso para usuarios, 
+se reestablecio toda la funcionalidad de registro y tonkens a la clase UsuariosNK
+
+
+
+-----------------------------------------
+V0.5
+2023-09-17
+-Nuestra Empresa
+-Politica de Cookies
+-Politica de Devolicion
+-Colaboradores Board Mejorado
+-Publicaciones: Colaboradores Vincular
+-Publicaciones: Servicios Vinculados
+
+2023-09-06
+-Publicaciones, Dirigir a colaborador y mostrar foto
+-Colaboradores publico
+
+2023-08-27
+-Inicio de sesion PanelNK Administrativo Basico
+
+2023-08-25
+-Publicaciones textarearich: imagenes get corregido
+-Seccion Nuestra Empresa
+-ServicioNK publicacion: Organizar Header
+-Bread walk en publicaciones
+
+2023-08-24
+-Categorias en publicaciones
+-Productos board, mostrar node zero en todos los aspectos
+-Producto cambiar forma de precios
+-Mostrar Avisos no inicio de sesion - Producto Carrito Favoritos
+
+2023-08-23
+-Carrito sin inicar sesion
+-Imagen Usuario neokiri en panel usuario topbar
+-Favoritos en panel usuarios
+
+2023-08-22
+- Se elimino precio base de los productos, por precio en oferta,en ves de usar porcentaje
+
+
+
+-----------------------------------------
+V0.4
+2023-08-21
+- Organizo la imagen de las portada sin imagen
+
+2023-08-20
+-Se organizar las paginas de recuperacion de clave usuarios nuevos, recuperacion de claves y recuperacion de clave de colaborador
+
+2023-08-19
+-ProductosNK: Se organizo los favoritos, tanto eliminar como agregar en la pagina producto y en el topbar
+-ProductosNK JS: Se organizo organizar precio cuando se añada a carrito de compras|
+-ProductosNK JS: Se organizo los header de marcas y categorias en ProductosBoard
+-ProductosNK BK: Se verifica producto antes de ingresar a carrito de compras, para evitar errores y modificaciones en el proceso de envio de datos 
+
+2023-08-08
+- Se organizo el panel de edicion de usuarios
+
+2023-08-04
+- Se accede al panel de colaborador desde el administrador
+- Se organizo el panel de edicion de las marca con su respectiva info, portada
+- Se organizo el panel de edicion de categoria con sus respectivos info, portada, textarea e imagenes
+
+2023-07-30
+- Se oganizo los productos con su cantidad y mostrandose en el producto
+- Se creo la funcion de eliminar del carrito de compras
+2023-07-29
+- Se implemento la cantidad en carrito de compras, Que weba a lo bien :|
+2023-07-28
+- Se separo el footer web en nueva clase, para usarse globalmente y quitar el top solo para sitio principal, -- procediento con cambios
+2023-07-27
+- Se termino la conexion de productos con marcas y categorias, y publicaciones con servicios
+- Se cambio los SQLITE creados en todos las clases obligando a crear categoria
+2023-07-26
+- Se creo el modulo productos marcas - crear, eliminar, falta editar
+
+2023-07-23
+- Se recreo el modulo ProductosCategorias a los productos, si es muyyy necesario xD - Crear, Eliminar Solamente falta editar
+- Se Organizo el script de eliminar Producto Categoria
+
+2023-07-18
+- Se Organizo el vinculo de Publicaciones con Colaborador
+
+
+-----------------------------------------
+V0.3
+2023-07-18
+-Se creo el modulo de Colaboradores
+-Se movieron las publicaciones al modulo Colaboradores
+-Se creo el administrador de tokens neokiri para la recuperacion de claves y registro de usuarios y colaboradores en un mismo sitio
+-Se modifico el login de colaboradores
+-Se modifico el login de usuarios
+-Se completo el login de colaboradores y usuarios
+-Se completo el el login recuperacion de colaboradores y usuarios
+
+2023-07-12
+-Organizado El inicio de sesion
+
+2023-07-06
+-Creado el modulo de usuarios
+
+2023-06-23
+-Dar estilo a las publicaciones
+-Dar estilo a los productos
+-Dar estilo a los servicios
+-Cambio htacces de servicios
+-Organizado menu neokiri a Javascript en INIT Web JS
+
+-----------------------------------------
+-----------------------------------------
+V0.2
+2023-06-16
+-Se recupero lo eliminado
+-Se termino organizar las publicaciones
+-Se termino organizar los productos
+-Se termino organizar los servicios

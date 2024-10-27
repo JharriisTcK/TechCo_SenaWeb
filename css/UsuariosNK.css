@@ -1,0 +1,148 @@
+.UsuariosNK_Admin h2 {
+    margin: 0;
+    padding: 0.25em;
+    text-align: center;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+.UsuariosNK_Admin .FormBox {
+    background-color: var(--gris-bg);
+    /* padding: 0.5em; */
+    margin: 1em 0;
+}
+
+.UsuariosNK_Admin .ListaBox {
+    margin: 1em 0;
+    background-color: var(--gris-bg);
+    /* padding: 0.5em; */
+}
+.UsuariosNK_Admin .ListaBox ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.UsuariosNK_Admin .ListaBox ul li {
+    padding: 0.5em;
+    outline: 1px dashed var(--gris-outline);
+
+}
+.UsuariosNK_Admin .ListaBox ul li:hover {
+    background-color: var(--blanco-hover);
+}
+
+.UsuariosNK_Admin .ListaBox ul li img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+
+}
+.UsuarioNK {
+    margin: 0;
+}
+
+.UsuarioNK_HeaderBox {
+    margin: 0;
+    min-height: 40vh;
+    color: var(--blanco);
+    position: relative;
+}
+.UsuarioNK_HeaderBox .HeaderBG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+.UsuarioNK_HeaderBox .InfoBox {
+    position: absolute;
+    bottom: 0px;
+    width: 70%;
+    margin: 1em 15%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.UsuarioNK_HeaderBox  .InfoBox img {
+    display: block;
+    margin: 0 auto;
+    height: 10em;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+.UsuarioNK_HeaderBox .InfoBox div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.UsuarioNK_HeaderBox .InfoBox div > * {
+    backdrop-filter: blur(20px);
+}
+.UsuarioNK_HeaderBox  .InfoBox h1 {
+    text-align: center;
+    border-radius: 1em;
+}
+.UsuarioNK_HeaderBox  .InfoBox h1 a {
+    display: block;
+    color: var(--blanco);
+    padding: 0.5em;
+}
+
+.UsuarioNK .ContainerBox {
+    display: grid;
+    grid-template-columns: 7em 1fr;
+    gap: 1em;
+}
+.UsuarioNK .UsuarioMenuBox {
+    height: fit-content;
+
+}
+.UsuarioNK .UsuarioMenuBox ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.UsuarioNK .UsuarioMenuBox ul li {
+    margin-bottom: 0.5em;
+}
+.UsuarioNK .UsuarioMenuBox ul li a {
+    display: block;
+    padding: 0.5em;
+    background-color: var(--blanco-hover);
+    border-radius: 0.5em;
+    text-align: center;
+    color: var(--blanco);
+}
+.UsuarioNK .UsuarioMenuBox ul li a:hover {
+    background-color: var(--blanco);
+    color: var(--color-principal);
+}
+.UsuarioNK .UsuarioMenuBox ul li a.Activo {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+.UsuarioNK .ContenidoUsuarioBox {
+    background-color: var(--gris-bg);
+}
+.UsuarioNK .ContenidoUsuarioBox h1 {
+    display: none;
+}
+.UsuarioNK .ContenidoUsuarioBox h2 {
+    color: var(--blanco);
+    background-color: var(--color-principal);
+    text-align: center;
+    margin: 0.5em auto;
+    padding: 0.5em;
+    width: fit-content;
+    border-radius: 0.25em;
+    border-bottom: 3px solid var(--negro);
+}
+
+.UsuarioNK .ContenidoUsuarioBox ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}

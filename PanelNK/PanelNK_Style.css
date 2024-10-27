@@ -1,0 +1,21 @@
+#MenuPanelNK {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--gris-bg);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#MenuPanelNK li {
+    outline: 1px dashed var(--gris-outline);
+
+}
+#MenuPanelNK li a {
+    display: block;
+    padding: 1em;
+    text-align: center;
+}
+#MenuPanelNK li a:hover {
+    background-color: var(--blanco-hover);
+}

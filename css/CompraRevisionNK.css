@@ -1,0 +1,35 @@
+.CompraRevisionNK h1,
+.CompraRevisionNK h2 {
+    text-align: center;
+    color: var(--blanco);
+}
+.CompraRevisionNK .ClienteBox,
+.CompraRevisionNK .ValoresBox,
+.CompraRevisionNK .ControlesBox {
+    background-color: var(--gris-bg);
+    padding: 0.5em;
+}
+
+.CompraRevisionNK .ItemsLista {
+    margin: 1em 0;
+}
+.CompraRevisionNK .ItemsLista ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.CompraRevisionNK .ItemsLista li {
+    background-color: var(--gris-bg);
+    padding: 0.5em;
+}
+
+.CompraRevisionNK .ControlesBox {
+    margin: 1em 0;
+}
+.CompraRevisionNK .ControlesBox.CompraOK {
+    text-align: center;
+    background-color: var(--verde-ok);
+}

@@ -1,0 +1,199 @@
+.TextareaRichNK .RichMenu {
+    background: #000;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+.TextareaRichNK ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.TextareaRichNK .RichMenu>li {
+    display: inline-block;
+}
+
+.TextareaRichNK .RichMenu>li:hover {
+    cursor: pointer;
+    background: #404040;
+}
+
+.TextareaRichNK .RichMenu>li span {
+    display: block;
+    padding: 0.5em;
+}
+
+.TextareaRichNK .RichMenu>li ul {
+    position: absolute;
+    z-index: 11;
+    background: #000;
+    color: #fff;
+    display: none;
+}
+
+.TextareaRichNK .RichMenu>li:hover ul {
+    display: block
+}
+
+.TextareaRichNK .RichMenu ul li {
+    padding: 0.5em 2em;
+}
+
+.TextareaRichNK .RichMenu ul li:hover {
+    background: #555;
+}
+
+.TextareaRichNK .RichFrame,
+.TextareaRichNK .RichTextarea {
+    width: 100%;
+    display: block;
+    border: 0;
+}
+
+.TextareaRichNK .RichFrame {
+    height: 25em;
+
+}
+
+.TextareaRichNK .RichImagenes {
+    background: #c7c7c7;
+    display: none;
+}
+
+.TextareaRichNK .RichImagenes.activo {
+    display: block;
+}
+
+.TextareaRichNK .ImagenesList {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+}
+
+.TextareaRichNK .ImagenesList li {
+    padding: 0.25em;
+}
+
+.TextareaRichNK .ImagenesList li:hover {
+    background: #fff;
+    cursor: pointer;
+}
+
+.TextareaRichNK .ImagenesList .preview img {
+    max-width: 100%;
+}
+
+.TextareaRichNK .RichVideos {
+    background: #c7c7c7;
+    display: none;
+}
+
+.TextareaRichNK .RichVideos.activo {
+    display: block;
+}
+
+.TextareaRichNK .VideoControls,
+.TextareaRichNK .VideoUploadBox {
+    background: #a0a0a0;
+}
+
+.TextareaRichNK .VideosLista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.TextareaRichNK .VideosLista li {
+    position: relative;
+    /*
+    width: 30.3%;
+    padding: 1.5%;
+    display: inline-block
+    */
+}
+
+.TextareaRichNK .VideosLista li:hover {
+    background: #dfdfdf;
+}
+
+.TextareaRichNK .VideosLista li img {
+    max-width: 100%;
+}
+
+.TextareaRichNK .MenuLinkBox {
+    position: absolute;
+    background: #a0a0a0;
+    padding: 0.25em;
+}
+
+.TextareaRichNK .MenuLinkBox span {
+    display: inline !important;
+}
+
+.TextareaRichNK_UpBoxblack {
+    background: #000;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.TextareaRichNK_UpBox {
+    background: #fff;
+    height: auto;
+    position: absolute;
+    width: 85%;
+    z-index: 101;
+}
+.TextareaRichNK_UpBox ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.TextareaRichNK_UpBox img {
+    max-width: 100%;
+}
+
+.TextareaRichNK_UpBox .UpList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    outline: 1px dashed #555;
+}
+.TextareaRichNK_UpBox .UpList li {
+    position: relative;
+    padding: 0.5em;
+    text-align: center;
+}
+.TextareaRichNK_UpBox .UpList li > * {
+    display: block;
+}
+.TextareaRichNK_UpBox .UpList li textarea {
+    width: 90%;
+}
+
+
+/*  Estilo Desktop */
+@media only screen and (min-width: 700px) {
+    .TextareaRichNK_UpBox .UpList {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+/*  Estilo tablet */
+@media only screen and (min-width: 400px) and (max-width: 699px) {
+    .TextareaRichNK_UpBox .UpList {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/*  Estilo Movil */
+@media only screen and (max-width: 399px) {
+    .TextareaRichNK_UpBox .UpList {
+        grid-template-columns: 1fr;
+    }
+    
+}

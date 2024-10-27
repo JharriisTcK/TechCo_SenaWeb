@@ -1,0 +1,156 @@
+/*********************** ******************************/
+.FormNK {
+    padding: 0.5em;
+    text-align: left;
+}
+
+.FormNK_Container {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.FormNK_Container>div {
+    padding: 0.25em;
+    border-bottom: 1px dashed #000;
+}
+
+.FormNK_Container>div:hover {
+    background: #f6f6f6;
+}
+.FormNK_Container > div p {
+    font-size: 0.85em;
+    font-style: italic;
+}
+
+.Only {
+    display: inline-block;
+    text-align: left;
+    width: 10em;
+}
+
+.FormNK input[type=text],
+.FormNK input[type=email],
+.FormNK input[type=number],
+.FormNK input[type=password],
+.FormNK select {
+    width: 15em;
+}
+
+.FormNK textarea {
+    height: 20em;
+    width: 90%;
+}
+
+.FormNK .buttonNormal,
+.FormNK .buttonUpload,
+.FormNK .buttonReload,
+.FormNK .buttonCancel,
+.FormNK .buttonDelete,
+.FormNK .buttonEdit {
+    padding: 0.3em;
+    display: inline-block;
+    border-left: 0.15em solid #000;
+    ;
+    cursor: pointer;
+}
+
+.FormNK .buttonNormal,
+.FormNK .buttonUpload,
+.FormNK .buttonReload {
+    background: #a3ddb7;
+    /*background: #00a339;*/
+}
+
+.FormNK .buttonNormal:hover,
+.FormNK .buttonUpload:hover,
+.FormNK .buttonReload:hover {
+    background: #96c2a5;
+    /*background: #007f2d;*/
+}
+
+.FormNK .buttonCancel {
+    background: #ffd900;
+}
+
+.FormNK .buttonCancel:hover {
+    background: #e4c200;
+}
+
+.FormNK .buttonDelete {
+    background: #b10002;
+    color: #fff;
+}
+
+.FormNK .buttonDelete:hover {
+    background: #790003;
+}
+
+.FormNK .buttonEdit {
+    background: #a3ddb7;
+}
+
+.FormNK .buttonEdit:hover {
+    background: #96c2a5;
+}
+
+
+/*********************/
+
+
+.FormNK_SetFile .filesUpload {
+    background: #a0a0a0;
+}
+
+.FormNK .FormNK_FileImage img {
+    max-height: 15em;
+}
+
+/*******************************************************/
+.FormNK_FileImage .FileImage_boxImageReady_listReady {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5em;
+}
+.FormNK_FileImage .FileImage_boxImageReady_listReady li {
+    position: relative;
+}
+.FormNK_FileImage .FileImage_boxImageReady_listReady .FileImage_boxImageReady_controls {
+    position: absolute;
+    right: 0px;
+}
+
+.FormNK_FileImage .FileImage_boxImageReady_listReady img {
+    max-width: 100%;
+}
+
+/*******************************************************/
+
+.logoPCircle {
+    text-shadow: #fff 1px 1px 1px;
+    width: 12.5em;
+}
+
+.FormNK .publicidadSelector_statOK {
+    background: #a3ddb7;
+}
+
+.FormNK .FormNK_footer {
+    text-align: center;
+}
+
+.FormNK .FormNK_footer input[type=submit],
+.FormNK .FormNK_footer input[type=reset] {
+    margin: 0 0.5em;
+    padding: 1em;
+}
+
+.FormNK .FormNK_footer input[type=submit] {
+    background-color: var(--color-principal);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+.FormNK .FormNK_footer input[type=submit]:hover {
+    background-color: var(--color-principal-white);
+
+}

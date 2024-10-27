@@ -1,0 +1,105 @@
+#SubMenuPanel,
+.ColaboradorNK .MenuBox,
+.ColaboradorNK .ContenidoBox {
+    background-color: var(--gris-bg);
+}
+
+#SubMenuPanel,
+.ColaboradorNK .MenuBox ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ColaboradorNK_HeaderBox {
+    color: var(--blanco);
+    height: 50vh;
+    position: relative;
+}
+
+.ColaboradorNK_HeaderBox .FotoHD {
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.ColaboradorNK_HeaderBox .Container {
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    backdrop-filter: blur(3px);
+}
+.ColaboradorNK_HeaderBox .Container h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0.5em;
+    text-shadow: 1px 1px 2px var(--negro);
+}
+.ColaboradorNK_HeaderBox .Container .Controles {
+    text-align: right;
+}
+
+.ColaboradorNK .ContainerBox {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1em;
+}
+.ColaboradorNK .MenuBox ul li a {
+    display: block;
+    padding: 0.5em;
+}
+.ColaboradorNK .MenuBox ul li a:hover {
+    background-color: var(--blanco-hover);
+    transition: ease 0.5s;
+}
+#SubMenuPanel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#SubMenuPanel li a {
+    display: block;
+    padding: 1em;
+    text-align: center;
+    outline: 1px dashed var(--gris-outline);
+}
+
+#SubMenuPanel li a:hover {
+    background-color: var(--blanco-hover);
+    transition: ease 0.5s;
+}
+
+.TokensBoard_AdminNK {
+    background-color: var(--gris-bg);
+    margin: 1em 0;
+}
+.TokensBoard_AdminNK h1,
+.TokensBoard_AdminNK h2 {
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 0.5em;
+    margin: 0;
+    text-align: center;
+}
+
+.TokensBoard_AdminNK .ListaBox ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.TokensBoard_AdminNK .ListaBox ul li {
+    padding: 0.5em;
+}
+
+.zeroItem img {
+    height: 50vh;
+    margin: 0 auto;
+    display: block;
+
+}
