@@ -10,6 +10,13 @@
 .Caja_AdminNK .ListaBox ul li {
     padding: 0.5em;
     background-color: var(--gris-bg);
+    border-radius: 0 0 1em 1em;
+}
+.Caja_AdminNK .ListaBox ul li.Pendiente {
+    border-bottom: 5px solid var(--rojo);
+}
+.Caja_AdminNK .ListaBox ul li.Confirmado {
+    border-bottom: 5px solid var(--verde-ok);
 }
 
 .Caja_AdminNK h1,
@@ -45,4 +52,11 @@
     padding: 0.5em;
     background-color: var(--gris-bg);
     border-radius: 0.5em;
+}
+
+.CajaRevision_AdminNK .ControlesBox.Pendiente {
+    border-left: 1em solid var(--rojo);
+}
+.CajaRevision_AdminNK .ControlesBox.Confirmado {
+    border-left: 1em solid var(--verde-ok);
 }

@@ -1,3 +1,7 @@
+.UsuariosNK_Admin h1 {
+    text-align: center;
+    color: var(--blanco);
+}
 .UsuariosNK_Admin h2 {
     margin: 0;
     padding: 0.25em;
@@ -145,4 +149,32 @@
     padding: 0;
     border: 0;
     list-style: none;
+}
+
+.UsuarioNK .MisCompras {
+    padding: 0.5em
+}
+
+.UsuarioNK .MisCompras ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5em;
+}
+.UsuarioNK .MisCompras li {
+    padding: 0.5em;
+    outline: 1px dashed #999;
+    line-height: 1.5em;
+    text-align: center;
+    border-radius: 0 0 1em 1em;
+    border-bottom: 3px solid var(--color-principal);
+}
+.UsuarioNK .MisCompras li:hover {
+    background-color: var(--blanco-hover);
+    border-bottom: 3px solid var(--color-principal-white);
+}
+.UsuarioNK .MisCompras li .Confirmado {
+    background-color: var(--verde-ok);
+}
+.UsuarioNK .MisCompras li .Pendiente {
+    color: var(--rojo);
 }

@@ -4,14 +4,21 @@
 
 -Registar usuario no carga
 -Productos Nuevo Slider Header Solo Producto (Vitrina), no album
--Inicio de sesion PanelNK Administrativo (Mejor crear usuarios administrador, para guardar registro uso y quienes lo usan con todos los derechos)
 -PanelNK Tokens: Enviar Correo
 
 -Publicaciones Colaboradores/Usuarios, Mostrar si el usuario esta deshabilitado
--ProductoNK: GlobalFuncion Actualizar producto con CarritoNK
 
 -Aside: Crear una funcion jx Aside que se encargue de obtener productos, articulos,, ofertas, de modo aleatorio en el aside de las paginas, en primer pensado leer los tipos de nodo con su ID que quiero y solicitarlos mediante Ajax
 -----------------------------------------
+V0.2
+-ProductoNK: GlobalFuncion Actualizar producto con CarritoNK
+-Inicio de sesion PanelNK Administrativo (Mejor crear usuarios administrador, para guardar registro uso y quienes lo usan con todos los derechos)
+
+
+
+
+
+
 V0.1
 2024-03-03
 -PanelNK Usuarios: Habilitar Modo Administrador

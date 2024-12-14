@@ -182,11 +182,11 @@ class ProductoNK {
 		if(this.InCarrito) {
 			var nnInCarrito=document.createElement("div");
 			nnInCarrito.className="InCarrito";
-			nnInCarrito.innerHTML="En carrito de compras";
+			nnInCarrito.innerHTML=this.CarritoCantidadSeleccionada+" unidades<br/>En carrito de compras";
 			nnContainerPrecio.appendChild(nnInCarrito);
-			console.warn("SI esta en carrito");
+			// console.warn("SI esta en carrito");
 		} else {
-			console.warn("NO esta en carrito");
+			// console.warn("NO esta en carrito");
 		}
 		// --------------------
 		var nnControlesBox=document.createElement("div");

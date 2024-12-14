@@ -2,6 +2,9 @@
     width: 70%;
     margin: 0 auto;
     padding: 1em;
+    background-color: var(--blanco-hover);
+    margin: 1em auto;
+    border-radius: 1em;
 }
 .neoKiri_Recover img {
     max-width: 100%;
@@ -31,11 +34,11 @@
 }
 .neoKiri_Recover form label input[type=password] {
     display: block;
-    width: 100%;
+    width: 90%;
     text-align: center;
 }
 .neoKiri_Recover form input[type=submit] {
-    width: 100%;
+    width: 70%;
     text-align: center;
     padding: 0.5em;
     margin: 1em 0;

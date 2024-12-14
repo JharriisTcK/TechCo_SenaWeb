@@ -126,7 +126,7 @@ class FormNK {
 		var nnTexto = document.createElement("b");
 		nnTexto.innerHTML = text;
 		nnLabel.appendChild(nnTexto);
-		var nnInput = objOptions.nodeInput;
+		let nnInput = objOptions.nodeInput;
 		nnInput.name = nombre;
 		nnInput.type = "text";
 		nnInput.placeholder = objOptions.placeholder;

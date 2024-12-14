@@ -569,6 +569,30 @@ class ProductoNK {
 		return [true, $Habilitado];
 	}
 
+	public function VisitaSumar() {
+		if(empty($this->ProductoID)) {
+			return [false, "Sin id producto a editar contenido"];
+		}
+		if(!$this->Habilitado) {
+			return [false, "No se ha habilitado para la suma"];
+		}
+		$VisitasNew=$this->Visitas+1;
+		$tabla=ProductosNK_Conexion::$tabla_productos;
+		$query="UPDATE $tabla SET Visitas=? WHERE ProductoID=?";
+		$sql=ProductosNK_Conexion::getConexion();
+		if($stmt=$sql->prepare($query)){
+			$stmt->bind_param("is", $VisitasNew, $this->ProductoID);
+			if(!$stmt->execute()) {
+				return [false, $sql->error];
+			};
+			$stmt->close();
+		} else {
+			return [false, $sql->error];
+		}
+		$sql->close();
+		return [true];
+	}
+
 	public function Producto_Del()	{
 		if(empty($this->ProductoID)) {
 			return [false,"sin id producto a eliminar"];

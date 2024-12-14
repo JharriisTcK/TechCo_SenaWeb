@@ -1,83 +1,4 @@
-.ProductosNK_Admin,
-.ProductosCategoriasNK_Admin,
-.ProductosMarcasNK_Admin {
-    background-color: var(--gris-bg);
-    margin: 0;
-}
 
-.ProductosNK_Admin h2,
-.ProductosCategoriasNK_Admin h2,
-.ProductosMarcasNK_Admin h2 {
-    padding: 0.5em;
-    margin: 0;
-    color: var(--blanco);
-    background-color: var(--negro);
-    text-align: center;
-}
-.ProductosNK_Admin ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-}
-.ProductosNK_Admin .ProductoItem {
-    padding: 0.5em;
-    outline: 1px dashed var(--gris-outline);
-    text-align: center;
-}
-.ProductosNK_Admin .ProductoItem:hover {
-    background-color: var(--blanco-hover);
-}
-.ProductosNK_Admin .ProductoItem a {
-    display: block;
-
-}
-.ProductosNK_Admin .ProductoItem img,
-.ProductosCategoriasNK_Admin ul li img {
-    display: block;
-    width: 100%;
-    height: 10em;
-    object-fit: contain;
-}
-
-/* -------------------------------------------------- */
-.ProductosNK_AdminForm > div {
-    background-color: var(--gris-bg);
-}
-
-.ProductosNK_AdminForm img {
-    max-width: 100%;
-}
-/* -------------------------------------------------- */
-
-.ProductosCategoriasNK_Admin img,
-.ProductosMarcasNK_Admin img {
-    max-width: 100%;
-}
-.ProductosCategoriasNK_Admin button,
-.ProductosMarcasNK_Admin button {
-    display: block;
-    margin: 0 auto;
-}
-.ProductosCategoriasNK_Admin .PublicosBox ul,
-.ProductosMarcasNK_Admin .PublicosBox ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-    
-.ProductosCategoriasNK_Admin .PublicosBox ul li,
-.ProductosMarcasNK_Admin .PublicosBox ul li {
-    text-align: center;
-    padding: 0.5em;
-    outline: 1px dashed var(--gris-outline);
-}
-.ProductosCategoriasNK_Admin .PublicosBox ul li:hover,
-.ProductosMarcasNK_Admin .PublicosBox ul li:hover {
-    background-color: var(--blanco-hover);
-}
 /* -------------------------------------------------- */
 
 .ProductosNK_Board {
@@ -244,7 +165,7 @@
 .ProductoNK_HeaderBox {
     position: relative;
     height: 55vh;
-    margin-top: 3.4em;
+    margin-top: 3.7em;
     margin-bottom: 1em;
 }
 .ProductoNK_HeaderBox .SliderContainer {
@@ -352,7 +273,7 @@
     position: sticky;
     color: var(--blanco);
     background-color: var(--color-principal);
-    top: 3.3em;
+    top: 3.7em;
 }
 .ProductoNK .ContenidoBox .ProductoCategorias {
     text-align: right;

@@ -124,6 +124,8 @@ class CompraRevisionNK  {
         if(this.valueCotizacion.PagoConfirmado) {
             this.nodeControles.innerHTML="<p>El pago esta verificado y confirmado</p><p>En breve nos comunicaremos contigo para indicarte el proceso de envio. Muchas gracias por tu compra :D</p>";
             this.nodeControles.classList.add("CompraOK");
+        } else {
+            this.nodeControles.innerHTML="<p>El pago esta en proceso de verificación</p><p>EN breve se verificara el pago</p>";
         }
     }
     

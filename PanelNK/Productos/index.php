@@ -19,7 +19,7 @@ if(!isset($_SESSION["AdminKeyJX"])) {
     <link rel="stylesheet" type="text/css" href="../../css/StyleMain.css" />
     <link rel="stylesheet" type="text/css" href="../../css/SliderBoxNK_JS.css" />
     <link rel="stylesheet" type="text/css" href="../../css/FormNK.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/ProductosNK.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/ProductosNK_Admin.css" />
     <script type="text/javascript" src="../../js/neoKiriFooterWeb.js"></script>
     <script type="text/javascript" src="../../js/SliderBoxNK_JS.js"></script>
     <script type="text/javascript" src="../../js/TextoListaNK.js"></script>

@@ -35,12 +35,8 @@ $stat=UsuarioNK_TokenAdmin::Get_ID($TokenAdmin, $dirRaiz);
             node.appendChild(nnPerfilImagen);
 
             var nnTitulo=document.createElement("h1");
-            nnTitulo.innerHTML="Recuperacion de Contraseña";
+            nnTitulo.innerHTML="Recuperacion de Usuario";
             node.appendChild(nnTitulo);
-            
-            var nnSubtitulo=document.createElement("h2");
-            nnSubtitulo.innerHTML="Usuario NeoKiri";
-            node.appendChild(nnSubtitulo);
 
             var nnDescripcion=document.createElement("p");
             nnDescripcion.innerHTML="Bienvenido <b><?php echo $stat[1]->Nombres; ?></b>, gracias por utilizar nuestros servicios y validar tu cuenta, por favor ingresa la nueva contraseña que vas a utilizar en este proceso.";

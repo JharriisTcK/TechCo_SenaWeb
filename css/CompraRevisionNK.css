@@ -27,9 +27,12 @@
 }
 
 .CompraRevisionNK .ControlesBox {
+    font-weight: bold;
+    text-align: center;
     margin: 1em 0;
+    border-left: 1em solid var(--rojo);
 }
 .CompraRevisionNK .ControlesBox.CompraOK {
-    text-align: center;
-    background-color: var(--verde-ok);
+    
+    border-left: 1em solid var(--verde-ok);
 }

@@ -246,7 +246,9 @@ if (isset($_GET["ProductoNK"])) {
             $ResponseObj->RespuestaBool=true;
             $ProductoNK_ProductoGet_Obj->ImagenesGet();
             $ProductoNK_ProductoGet_Obj->VideosGet();
+            $ProductoNK_ProductoGet_Obj->VisitaSumar();
             $ResponseObj->Producto=$ProductoNK_ProductoGet_Obj;
+
             // ------------------------------------
             if(!isset($_SESSION["UsuarioNK"])) {
                 UsuarioNK_Login::Logout();

@@ -669,6 +669,73 @@ public static $tablaLite_Comentarios="CREATE TABLE IF NOT EXISTS Comentarios (
         return $id;
     }
 
+    function generarConsulta($cadena, $columnas, $tabla) {
+        // Paso 1: Separar la cadena en palabras
+        $palabras = preg_split('/\s+/', trim($cadena));  // Utiliza espacios como delimitador
+        $totalPalabras = count($palabras);
+    
+        // Paso 2: Generar combinaciones de las palabras de mayor a menor
+        $combinaciones = [];
+        for ($i = $totalPalabras; $i > 0; $i--) {
+            for ($j = 0; $j <= $totalPalabras - $i; $j++) {
+                // Unir las palabras de cada combinación y agregarla al array
+                $combinaciones[] = implode(' ', array_slice($palabras, $j, $i));
+            }
+        }
+    
+        // Paso 3: Generar la consulta combinando las columnas y las combinaciones de palabras
+        $condiciones = [];
+        
+        // Para cada combinación de palabras, creamos condiciones para todas las columnas
+        foreach ($combinaciones as $combinacion) {
+            // Creamos la condición para cada columna con esa combinación de palabras
+            $condicionesPorCombinacion = array_map(function($columna) use ($combinacion) {
+                return "$columna LIKE '%$combinacion%'";
+            }, $columnas);
+    
+            // Agregamos todas las condiciones generadas con 'OR' para esa combinación de palabras
+            $condiciones[] = '(' . implode(' OR ', $condicionesPorCombinacion) . ')';
+        }
+    
+        // Paso 4: Unir todas las condiciones con 'OR' entre combinaciones
+        $consulta = 'SELECT * FROM ' . $tabla . ' WHERE ' . implode(' OR ', $condiciones);
+        
+        return $consulta;
+    }
+
+    function generarConsultaAND($cadena, $columnas, $tabla) {
+        // Paso 1: Separar la cadena en palabras
+        $palabras = preg_split('/\s+/', trim($cadena));  // Utiliza espacios como delimitador
+        $totalPalabras = count($palabras);
+    
+        // Paso 2: Generar combinaciones de las palabras de mayor a menor
+        $combinaciones = [];
+        for ($i = $totalPalabras; $i > 0; $i--) {
+            for ($j = 0; $j <= $totalPalabras - $i; $j++) {
+                // Unir las palabras de cada combinación y agregarla al array
+                $combinaciones[] = implode(' ', array_slice($palabras, $j, $i));
+            }
+        }
+    
+        // Paso 3: Generar la consulta combinando las columnas y las combinaciones de palabras
+        $condiciones = [];
+        
+        // Para cada combinación de palabras, creamos condiciones para todas las columnas
+        foreach ($combinaciones as $combinacion) {
+            // Creamos la condición para cada columna con esa combinación de palabras
+            $condicionesPorCombinacion = array_map(function($columna) use ($combinacion) {
+                return "$columna LIKE '%$combinacion%'";
+            }, $columnas);
+    
+            // Agregamos todas las condiciones generadas con 'AND' para esa combinación de palabras
+            $condiciones[] = '(' . implode(' AND ', $condicionesPorCombinacion) . ')';
+        }
+    
+        // Paso 4: Unir todas las condiciones con 'OR' entre las combinaciones
+        $consulta = 'SELECT * FROM ' . $tabla . ' WHERE ' . implode(' OR ', $condiciones);
+        
+        return $consulta;
+    }    
 
 }
 

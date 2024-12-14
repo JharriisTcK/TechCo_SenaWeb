@@ -68,6 +68,7 @@ class Caja_AdminNK  {
         var _this=this;
         var CotizacionItem=this.valueCotizaciones[Itera];
         var nnLi=document.createElement("li");
+        nnLi.className=(CotizacionItem.PagoConfirmado)?"Confirmado":"Pendiente";
         this.nodeLista.appendChild(nnLi);
         
         var nnTitulo=document.createElement("div");

@@ -17,6 +17,7 @@ $ID_in=$_GET["ID"];
     <link rel="stylesheet" type="text/css" href="../../css/FileImageNK.css" />
     <link rel="stylesheet" type="text/css" href="../../css/TextareaRichNK.css" />
     <link rel="stylesheet" type="text/css" href="../../css/ProductosNK.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/ProductosNK_Admin.css" />
     <script type="text/javascript" src="../../js/InitWeb_js.js"></script>
     <script type="text/javascript" src="../../js/neoKiriFooterWeb.js"></script>
     <script type="text/javascript" src="../../js/SliderBoxNK_JS.js"></script>

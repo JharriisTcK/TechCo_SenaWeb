@@ -118,6 +118,7 @@ class CajaRevision_AdminNK  {
             var nnNoCofirmadoP=document.createElement("p");
             nnNoCofirmadoP.innerHTML="El pago de esta venta se ha confirmado";
             this.nodeControles.appendChild(nnNoCofirmadoP);
+            this.nodeControles.classList.add("Confirmado");
         } else {
             var nnNoCofirmadoP=document.createElement("p");
             nnNoCofirmadoP.innerHTML="Aun no se ha confirmado el pago, importante revisar la informacion de pago antes de proceder";
@@ -128,6 +129,7 @@ class CajaRevision_AdminNK  {
             nnNoCofirmadoButton.onclick=function() {
                 _this.jxVerificarCompra();
             }
+            this.nodeControles.classList.add("Pendiente");
         }
     }
     

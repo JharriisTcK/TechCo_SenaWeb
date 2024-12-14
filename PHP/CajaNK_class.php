@@ -377,7 +377,7 @@ class CajaNK_Getters {
     public static function CotizacionesGet($SoloPendientes=true) {
         $mysqli=CajaNK_Conexion::getConexion();
         $tabla=CajaNK_Conexion::$tabla_cotizacionventa;
-        $query="SELECT CajaNK_CotizacionVentaID, ClienteTelefono, ClienteCorreo, ClienteTipo, ItemsJSON, PrecioTotalBase, PrecioTotalIVA, PrecioTotal, PagoConfirmado, Fecha_Registro, Fecha_Expiracion FROM $tabla ORDER BY Fecha_Registro ASC";
+        $query="SELECT CajaNK_CotizacionVentaID, ClienteTelefono, ClienteCorreo, ClienteTipo, ItemsJSON, PrecioTotalBase, PrecioTotalIVA, PrecioTotal, PagoConfirmado, Fecha_Registro, Fecha_Expiracion FROM $tabla ORDER BY PagoConfirmado ASC, Fecha_Registro ASC";
         $resultados=[];
         if(!$stmt=$mysqli->prepare($query)) {
             $error=$mysqli->error;

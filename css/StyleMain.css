@@ -5,7 +5,7 @@
     --blanco-hover: #fff4;
     --negro: #000;
     --gris-bg: #c5c5c5;
-    --gris-outline: #404040;
+    --gris-outline: #9f9f9f;
     --rojo: #cf0000;
     --rojo-hover: #ec2525;
     --verde-ok: #7fff00;
@@ -39,6 +39,16 @@ a {
 
 a:hover {
     color: var(--color-principal-white);
+}
+
+input[type=text],
+input[type=number],
+input[type=password] {
+    padding:0.5em;
+}
+
+select {
+    padding: 0.5em;
 }
 
 body {

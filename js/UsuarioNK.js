@@ -454,8 +454,12 @@ class UsuarioNK  {
         this.nodeFavoritosBox.appendChild(nnTituloFavoritos);
         var nnFavoritosLista=document.createElement("ul");
         this.nodeFavoritosBox.appendChild(nnFavoritosLista);
-        for (let i = 0; i < this.valueProductosFavoritos.length; i++) {
-            this.ProductoFavorito_ItemConfig(i, nnFavoritosLista);
+        if(this.valueProductosFavoritos.length>0) {
+            for (let i = 0; i < this.valueProductosFavoritos.length; i++) {
+                this.ProductoFavorito_ItemConfig(i, nnFavoritosLista);
+            }
+        } else {
+            nnFavoritosLista.innerHTML="<p>No se han marcado productos como favoritos</p>";
         }
         this.ProductosFavoritosCreado=true;
     }
@@ -533,8 +537,10 @@ class UsuarioNK  {
         var nnTitulo=this.nnNode("div", nnLi);
         var nnTituloB=this.nnNode("b", nnTitulo);
         nnTituloB.innerHTML=CompraItem.Titulo;
+        let nnStatus=this.nnNode("div", nnLi, (CompraItem.PagoConfirmado)?"Verificado":"No se ha verificado la compra");
+        nnStatus.className=(CompraItem.PagoConfirmado)?"Confirmado":"Pendiente";
         var nnPrecio=this.nnNode("div", nnLi);
-        nnPrecio.innerHTML=CarritoComprasNK.NumeroAMoneda(CompraItem.PrecioTotalBase)+" COP";
+        nnPrecio.innerHTML=CarritoComprasNK.NumeroAMoneda(CompraItem.PrecioTotal)+" COP";
         var nnControlesItem=this.nnNode("div", nnLi);
         var nnVerCompra=this.nnNode("button", nnControlesItem);
         nnVerCompra.innerHTML="Ver Compra";

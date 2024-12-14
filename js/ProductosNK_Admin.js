@@ -110,6 +110,7 @@ class ProductosNK_Admin {
         nodeLista.appendChild(nnLi);
         var nnHeaderItem=document.createElement("a");
         nnHeaderItem.href=this.dirRaiz+ProductoItem.link;
+        nnHeaderItem.target="_BLANK";
         nnLi.appendChild(nnHeaderItem);
         if(ProductoItem.PortadaT) {
             var nnPortadaItem=document.createElement("img");
@@ -339,6 +340,7 @@ class ProductosCategoriasNK_Admin {
         nnTextoB.innerHTML="Nombre Categoria: "
         nnTextoLabel.appendChild(nnTextoB);
         var nnTextoInput=document.createElement("Input");
+        nnTextoInput.type="text";
         nnTextoInput.required="required";
         nnTextoLabel.appendChild(nnTextoInput);
         var nnSubmit=document.createElement("Input");
@@ -634,6 +636,7 @@ class ProductosMarcasNK_Admin {
         nnTextoB.innerHTML="Nombre Marca: "
         nnTextoLabel.appendChild(nnTextoB);
         var nnTextoInput=document.createElement("Input");
+        nnTextoInput.type="text";
         nnTextoInput.required="required";
         nnTextoLabel.appendChild(nnTextoInput);
         var nnSubmit=document.createElement("Input");
@@ -666,7 +669,8 @@ class ProductosMarcasNK_Admin {
         var nnLi=document.createElement("li");
         nnLista.appendChild(nnLi);
         var nnNombreA=document.createElement("a");
-        nnNombreA.href=valueItem.NickDIr;
+        nnNombreA.href=this.dirRaiz+"Marcas/"+valueItem.NickDir+"/";
+        nnNombreA.target="_BLANK";
         nnLi.appendChild(nnNombreA);
         var nnMarcaImg=document.createElement("img");
         nnMarcaImg.src=this.dirRaiz+valueItem.LogoS;
